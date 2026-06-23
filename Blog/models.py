@@ -17,7 +17,7 @@ class Post (models.Model) :
         self.save()
 
 
-    def _str_(self) :
+    def __str__(self) :
         return self.titre
     
 
