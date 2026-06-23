@@ -1,10 +1,11 @@
 <header>
-    <h1><a-ref="/">Le Blog de Django </a-ref></h1>
+    <h1><a href="/">Le Blog de Django</a></h1>
 </header>
-{% for post in posts%}
+
+{% for post in posts %}
 <article>
-<time>publie: {{post.published_date}}</time>
-<h2><a ref="">{{post.titre}}</a></h2>
-<p>{{post.text }}</p>
+    <time>publié : {{ post.published_date }}</time>
+    <h2><a href="">{{ post.titre }}</a></h2>
+    <p>{{ post.text }}</p>
 </article>
-{% endfor%}
+{% endfor %}
